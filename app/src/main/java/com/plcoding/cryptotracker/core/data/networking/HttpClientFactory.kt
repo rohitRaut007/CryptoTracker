@@ -15,7 +15,7 @@ import kotlinx.serialization.json.Json
 
 object HttpClientFactory {
     fun create(engine: HttpClientEngine): HttpClient{
-        return HttpClient(engine){
+        return HttpClient(engine){  
             install(Logging){
                 level = LogLevel.ALL
                 logger = Logger.ANDROID
